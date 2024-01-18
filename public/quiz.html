@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Quiz App</title>
+  </head>
+  <body class="bg-gray-100 h-screen flex items-center justify-center">
+    <div class="max-w-md mx-auto p-6 bg-white rounded-md shadow-md">
+      <h1 class="text-3xl font-bold mb-6">Quiz</h1>
+      <form action="/result" method="POST">
+        <label class="block text-sm font-medium text-gray-600" for="answer1"
+          >Vraag 1: Wat is de hoofdstad van Frankrijk?</label
+        >
+        <input
+          class="mt-1 p-2 w-full border rounded-md"
+          type="text"
+          name="answer1"
+          required
+        />
+
+        <label
+          class="block text-sm font-medium text-gray-600 mt-4"
+          for="answer2"
+          >Vraag 2: Hoeveel planeten zijn er in ons zonnestelsel?</label
+        >
+        <input
+          class="mt-1 p-2 w-full border rounded-md"
+          type="text"
+          name="answer2"
+          required
+        />
+
+        <label
+          class="block text-sm font-medium text-gray-600 mt-4"
+          for="answer3"
+          >Vraag 3: Wat is de hoofdstad van Japan?</label
+        >
+        <input
+          class="mt-1 p-2 w-full border rounded-md"
+          type="text"
+          name="answer3"
+          required
+        />
+
+        <button
+          class="mt-6 bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600"
+          type="submit"
+        >
+          Verzend
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
